@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5  Example</title>
+  <meta charset="utf-Website8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+
+
+<body>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1>LEAF-TV</h1>
+  <p>Navega y selecciona libremente.</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="./LEATO.php">Aleatorio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./aleatorio.php">Voz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Peliculas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cartoon</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3 class="mt-4">Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+
+
+    <div class="col-sm-8">
+      <h2>Recientes</h2>
+      <h5><div id="current_date"></p>
+            <script>
+            document.getElementById("current_date").innerHTML = Date();
+      </script> </h5>
+      <!-- inicia carrucel --> <!-- las imagenews deben ser del mismo tamanio-->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+       <div class="carousel-inner">
+       <div class="carousel-item active">
+          <img src="./rnm1.jpeg" alt="Los Angeles" class="img-fluid" style="width:80%" >
+        </div>
+        <div class="carousel-item active">
+          <img src="./r12.png" alt="Los Angeles" class="img-fluid" style="width:100%">
+        </div>
+        <div class="carousel-item active">
+          <img src="./tlou.jpeg" alt="Los Angeles" class="img-fluid" style="width:100%">
+          </div>
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+     
+   <!-- Puedo agregar mas imagenes -->
+  </div>
+      <p>Actualizaciones constantes</p>
+      <p>Sube sube sube</p>
+
+      <h2 class="mt-5">TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2020</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-secondary text-green text-center">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
